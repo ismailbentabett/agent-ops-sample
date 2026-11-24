@@ -4,16 +4,16 @@
   "private": true,
   "description": "Small reference build: a support agent that hands over to a person when unsure, answers from documents with sources, books by a voice-style call flow, with roles, monitoring and an MCP server. Sample data only.",
   "scripts": {
-    "dev": "next dev -p 3200",
-    "build": "next build",
-    "start": "next start -p 3200",
+    "dev": "node init && next dev -p 3200",
+    "build": "node init && next build",
+    "start": "node init && next start -p 3200",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "mcp": "tsx mcp/server.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.2",
-    "next": "14.2.35",
+    "next": "16.4.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "zod": "4.6.7"
